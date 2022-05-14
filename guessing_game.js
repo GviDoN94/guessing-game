@@ -1,4 +1,4 @@
-let answer = parseInt(Math.random() * 100);
+const answer = parseInt(Math.random() * 100);
 
 let playerNumber = 1;
 
@@ -15,7 +15,6 @@ while(true){ //false - ложь
     if(userAnswer == answer){
         alert("Поздравляю! Победил игрок " + playerNumber);
         break;
-        // continue; - сразу переходим к следующей итерации
     } else if( userAnswer > answer) {
         alert("Вы ввели слишком большое число");
     } else if(userAnswer < answer) {
